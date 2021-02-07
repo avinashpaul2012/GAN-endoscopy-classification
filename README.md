@@ -14,3 +14,9 @@ color, shape and texture vary greatly in polyps. Thus, colonoscopy data is both 
 and annotating polyps is a cumbersome process. To address this issue of limited labeled data in endoscopic images, a semi-supervised classifier using generative adversarial network (GAN) is implemented here.
 
 ![alt text](https://github.com/avinashpaul2012/GAN-endoscopy-classification/blob/main/GAN%20diagram.png)
+
+Endoscopic polyps are classified using a modified GAN architecture. A standard classifier using
+GAN takes a data point, x as input for classifying it into K classes. This is done by introducing
+a softmax function at the output layer for supervised learning problems. This can be converted
+into a semi-supervised problem by simply adding an extra class and increasing the dimension of
+our network to K+1.
