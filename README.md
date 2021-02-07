@@ -13,3 +13,4 @@ is trained on supervised and unsupervised modes. Visual examination of polyps re
 color, shape and texture vary greatly in polyps. Thus, colonoscopy data is both difficult to acquire
 and annotating polyps is a cumbersome process. To address this issue of limited labeled data in endoscopic images, a semi-supervised classifier using generative adversarial network (GAN) is implemented here.
 
+![alt text](http://url/to/img.png)
