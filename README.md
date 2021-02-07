@@ -20,3 +20,12 @@ GAN takes a data point, x as input for classifying it into K classes. This is do
 a softmax function at the output layer for supervised learning problems. This can be converted
 into a semi-supervised problem by simply adding an extra class and increasing the dimension of
 our network to K+1.
+
+In semi-supervised learning, the GAN is trained on a limited labeled endoscopic dataset and
+from many unlabeled endoscopic images. The architecture Discriminator D and Generator G
+is changed. D in our method works on two modes. In the supervised mode, D trains on the
+labeled (x,y) pair, while in the unsupervised mode, GAN mimics the classical GAN model taking
+x as input and doing the task of classifying polyps as real or fake. The discriminator in semisupervised
+mode is trained using two independent models that share the network parameters. In
+the unsupervised mode, the output of the discriminator is a softmax function with K classes of
+polyps.
